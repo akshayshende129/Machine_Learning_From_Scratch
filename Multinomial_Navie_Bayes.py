@@ -51,7 +51,6 @@ class MultinomialNB:
       """
       article : ['word1','word2','word3']
       """
-        # Write your code here.
         prediction_sum = 0
         result = {}
         posterior_per_tag = {tag : math.log(prior) for tag, prior in self.tag_prob.items()}
